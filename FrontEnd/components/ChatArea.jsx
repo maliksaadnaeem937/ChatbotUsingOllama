@@ -2,12 +2,16 @@ import { Bot, User } from "lucide-react";
 import { useSelector } from "react-redux";
 
 export default function ChatArea() {
-  const {messages}=useSelector((state)=>state.chat)
-
+  const { messages } = useSelector((state) => state.chat);
 
   return (
     <div className="flex flex-col space-y-4">
-      {messages.map((msg, index) => (
+      {!messages ||
+        (messages.length === 0 && (
+          <div className="text-center text-2xl text-white">Start Chat</div>
+        ))}
+
+      {messages?.map((msg, index) => (
         <div
           key={index}
           className={`flex items-start space-x-3 ${

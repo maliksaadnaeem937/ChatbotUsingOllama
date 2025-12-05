@@ -7,17 +7,16 @@ import { onAuthStateChangedListener } from "@/utils/auth-listener";
 
 export default function AuthProvider({ children }) {
   const dispatch = useDispatch();
-  console.log("parent is being rendered");
+
 
   useEffect(() => {
-    console.log("I am parent use effect");
     const unsubscribe = onAuthStateChangedListener((user) => {
       if (user) {
         dispatch(
           setUser({
             name: user?.displayName || "",
             email: user?.email || "",
-            userId: user?.uid,
+            userId: user?.uid||"",
           })
         );
       } else {

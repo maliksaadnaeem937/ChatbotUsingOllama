@@ -1,28 +1,10 @@
-# Core
-langchain>=1.0.0
-streamlit>=1.30
-chromadb>=0.4.0
-langchain-huggingface>=0.0.1
-huggingface-hub>=0.16.0
-sentence-transformers>=2.2.2
-google-generativeai>=0.0.5
-langchain-google-genai>=0.0.3
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+motor>=3.3.0
+pymongo>=4.6.0
 langchain-core>=0.1.0
-langchain-community>=0.0.10
-
-# LangGraph (for RAG, workflows, and agents)
-langgraph>=0.2.39
-langgraph-checkpoint>=0.0.8
-# Ollama Integration
-langchain-ollama==1.0.0
-
-fastapi==0.121.1
-uvicorn==0.38.0
-langgraph-checkpoint-sqlite==3.0.0
-pymongo==4.6.0
-
-
-# Optional but Recommended
-numpy>=1.24
-tqdm>=4.65
-pydantic>=2.9
+langchain-ollama>=1.0.0
+langgraph>=0.2.0
+ollama>=0.6.0

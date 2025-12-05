@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  messages: [], // array of chat messages { type: 'user' | 'ai', text: string }
-  isLoading: true, // loading state for AI response
+  messages: [], 
+  isLoading: true, 
 };
 
 export const chatSlice = createSlice({

@@ -1,0 +1,25 @@
+# UI
+streamlit>=1.32.0
+
+# Backend / Core
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-dotenv>=1.0.0
+
+# Data validation
+pydantic>=2.5.0
+
+# Database (MongoDB)
+motor>=3.3.0
+pymongo>=4.6.0
+
+# LangChain + Graph
+langchain-core>=0.1.0
+langchain-ollama>=1.0.0
+langgraph>=0.2.0
+
+# Ollama client
+ollama>=0.6.0
+
+# Utilities
+uuid>=1.30

@@ -16,11 +16,3 @@ class ChatSchema(BaseModel):
 
 
 
-class ExpenseInput(BaseModel):
-    title: str           
-    description:Optional[str]=None   
-    amount: float            # money spent
-    category: str            # e.g., Food, Transport, Bills
-    date: date               # date of expense  
-         
-        

@@ -23,3 +23,7 @@ ollama>=0.6.0
 
 # Utilities
 uuid>=1.30
+
+
+run using uvicorn api:app --reload --host 0.0.0.0 --port 8000
+PyPDF2>=3.1.0

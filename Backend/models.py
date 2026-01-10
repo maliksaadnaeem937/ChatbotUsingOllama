@@ -2,8 +2,7 @@
 from pydantic import BaseModel
 from typing import List
 
-from datetime import date
-from typing import Optional
+
 
 class Message(BaseModel):
     type:str
